@@ -1,0 +1,21 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    double value1 = Double.valueOf(args[1]);
+    double value2 = Double.valueOf(args[2]);
+
+    if (args[0].equals("Addition")) {
+      System.out.println(value1 + value2);
+    } else if (args[0].equals("Subtraction")) {
+      System.out.println(value1 - value2);
+    } else if (args[0].equals("Multiplication")) {
+      System.out.println(value1 * value2);
+    } else if (args[0].equals("Division")) {
+      System.out.println(value1 / value2);
+    } else {
+      System.out.println("Error");
+    }
+  }
+}
